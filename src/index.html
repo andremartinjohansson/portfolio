@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>André Martin Johansson</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/images/AMJ-logo.png">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics-compat.js"></script>
+  <!-- <script defer src="https://www.gstatic.com/firebasejs/init.js?useEmulator=false"></script> -->
+</head>
+<body>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDCRiFxJj9wV27g_O7hEdLkOmDb68eazNY",
+      authDomain: "portfolio-amj.firebaseapp.com",
+      projectId: "portfolio-amj",
+      storageBucket: "portfolio-amj.appspot.com",
+      messagingSenderId: "315350921281",
+      appId: "1:315350921281:web:6de18c8c205ccf24b9d6c0",
+      measurementId: "G-M39W3JSDFH"
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    });
+  </script>
+
+  <app-root></app-root>
+</body>
+</html>
